@@ -61,7 +61,7 @@ export default function ReportPreviewPage() {
               <Printer className="w-3.5 h-3.5" />
               Print
             </Button>
-            <Button variant="hero" size="sm" className="gap-1.5">
+            <Button variant="hero" size="sm" className="gap-1.5" onClick={downloadReportPDF}>
               <Download className="w-3.5 h-3.5" />
               Export PDF
             </Button>
