@@ -1,6 +1,7 @@
 import AppLayout from "@/components/AppLayout";
 import { Button } from "@/components/ui/button";
 import { FileText, Download, Printer } from "lucide-react";
+import { downloadReportPDF } from "@/lib/generateReport";
 
 const reportSections = [
   {
