@@ -1,6 +1,7 @@
 import AppLayout from "@/components/AppLayout";
 import { Button } from "@/components/ui/button";
 import { FileText, Download, Printer } from "lucide-react";
+import { downloadReportPDF } from "@/lib/generateReport";
 
 const reportSections = [
   {
@@ -60,7 +61,7 @@ export default function ReportPreviewPage() {
               <Printer className="w-3.5 h-3.5" />
               Print
             </Button>
-            <Button variant="hero" size="sm" className="gap-1.5">
+            <Button variant="hero" size="sm" className="gap-1.5" onClick={downloadReportPDF}>
               <Download className="w-3.5 h-3.5" />
               Export PDF
             </Button>
